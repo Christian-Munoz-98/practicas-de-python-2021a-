@@ -1,3 +1,4 @@
+import os
 #Variables Globlales se pueden utilizar en cualquier parte del código
 conj_TP = set() #Conjuntos Vacíos
 conj_TB = set()
@@ -135,6 +136,7 @@ def evento():
             break
         else:
             print("Ingrese una opción válida")
+        
 
 def run():
 

@@ -1,3 +1,5 @@
+import os
+
 def run():
 
     while True:
@@ -44,11 +46,14 @@ def run():
             num += 1
             print(num ,"-", key )
 
-        
-        opc = int(input("---------->"))
+        try:
+            opc = int(input("---------->"))
+        except:
+            print("Sólo puede ingresar números enteros")
 
         print(estados_lista[opc-1], " Registró ", estados[estados_lista[opc-1]], " casos hasta el 19 de mayo")
         d = input("¿Desea consultar otro estado?-------->(s/n)")
+        os.system('cls')
         if d == 'n':
             break
         
